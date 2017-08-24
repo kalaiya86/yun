@@ -108,8 +108,16 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
+    'log' => env('APP_LOG', 'daily'),
 
+    'secure'    => env('SECURE', true),             // http or https
+
+    /*
+     * 短信发送接口
+     */
+    'sms_ip'    => env('SMS_IP' , '192.168.0.47'),
+    'sms_port'  => env('SMS_PORT', '7210'),
+    'sms_mer'   => env('SMS_MER', ''),
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -155,8 +163,10 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\SmsServicePrivider::class,             //短信
         Mews\Captcha\CaptchaServiceProvider::class,         // add by jason.zhang
+
+        App\Providers\JarvismanServiceProvider::class,       // add by kelly.wang
     ],
 
     /*

@@ -1,0 +1,165 @@
+﻿/* update 2015-4-14 */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.m-pagination {
+    height: 35px;
+}
+
+.m-pagination-page,
+.m-pagination-info,
+.m-pagination-size,
+.m-pagination-jump {
+    float: left;
+    margin-top: 2px;
+    padding-right: 10px;
+}
+
+/* font */
+.m-pagination-page > li > a,
+.m-pagination-size > select,
+.m-pagination-group > input,
+.m-pagination-group > button,
+.m-pagination-info {
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    color: #888;
+}
+
+/* border */
+.m-pagination-page > li > a,
+.m-pagination-size > select,
+.m-pagination-group > input,
+.m-pagination-group > button {
+    outline: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    border: 1px solid #ddd;
+}
+
+/* button */
+.m-pagination-page > li > a,
+.m-pagination-group > button {
+    cursor: pointer;
+    /*background-color: #fff;*/
+    background-image: -webkit-linear-gradient(top,#FFF 0,#FFF 100%);
+    background-image: -o-linear-gradient(top,#FFF 0,#FFF 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#FFF),to(#FFF));
+    background-image: linear-gradient(to bottom,#FFF 0,#FFF 100%);
+
+    border: 1px solid rgba(255,255,255,0);
+
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.m-pagination-page > li:hover > a,
+.m-pagination-group > button:hover {
+    /*background-image: -webkit-linear-gradient(top,#e38432 0,#dd5e2b 100%);
+    background-image: -o-linear-gradient(top,#e38432 0,#dd5e2b 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#e38432),to(#dd5e2b));
+    background-image: linear-gradient(to bottom,#e38432 0,#dd5e2b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e38432', endColorstr='#dd5e2b', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);*/
+
+    color:#649af9;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+
+
+/*************  pagination-page  *************/
+
+.m-pagination-page > li {
+    list-style: none;
+    float: left;
+    margin-right: 1px;
+}
+
+.m-pagination-page > li > a {
+    height: 35px;
+    min-width: 35px;
+    box-sizing: border-box;
+    line-height: 34px;
+    margin-left: -1px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 18px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.m-pagination-page > li.active > a {
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#6d71f6 0,#62b4fb 100%);
+    background-image: -o-linear-gradient(top,#6d71f6 0,#62b4fb 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#6d71f6),to(#62b4fb));
+    background-image: linear-gradient(to bottom,#6d71f6 0,#62b4fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d71f6', endColorstr='#62b4fb', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.m-pagination-page > li:first-child > a {
+    margin-left: 0;
+    borde-radius: 17px;
+    padding: 0 8px;
+}
+
+.m-pagination-page > li:last-child > a {
+    border-radius: 17px;
+    padding: 0 8px;
+}
+
+
+
+/*************  pagination-perpage  *************/
+
+.m-pagination-size > select {
+    cursor: pointer;
+    height: 36px;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+
+
+/*************  pagination-go   *************/
+
+.m-pagination-group > input,
+.m-pagination-group > button {
+    float: left;
+}
+
+.m-pagination-group > input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 50px;
+    height: 34px;
+    padding: 0px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.m-pagination-group > button {
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 36px;
+    padding: 0px 12px;
+}
+
+
+/************  pagination-info   *************/
+
+.m-pagination-info {
+    height: 36px;
+    line-height: 36px;
+}
